@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="shortcut icon" href="./assets/images/daily-news.png" type="image/x-icon">
+   <title>Daily News</title>
+   <link rel="stylesheet" href="./assets/css/style.css">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+   <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+         <div class="container">
+            <a class="navbar-brand" href="#"><span class="bg-info p-1 px-2 rounded-3 fw-bold">Daily</span> News</a>
+
+            <div class="" id="navbarText">
+
+               <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex flex-row justify-content-center align-content-center">
+                  <li class="nav-item me-1 header-link">
+                     <a class="nav-link active" aria-current="page" href="./index.html">News</a>
+                  </li>
+                  <li class="nav-item header-link">
+                     <a class="nav-link me-1" href="./blog.html">Blogs</a>
+                  </li>
+                  <li class="nav-item">
+                     <img class="athor-image" src="./assets/images/sanu.png" alt="" srcset="">
+                  </li>
+               </ul>
+
+            </div>
+
+         </div>
+      </nav>
+   </header>
+
+   <!-- ...... Header section end ......  -->
+   <!-- ....................... 
+   Frequently Asked Questions Section Start
+   ....................... -->
+   <section class="my-5 blog-body">
+      <div class="container">
+         <div class="row">
+            <div class=" col-12">
+               <div class="container mb-4 ">
+                  <h3 class="fw-bold text-center mb-2 ">Frequently Asked Questions</h3>
+                  <p class="fs-6 text-center frequently-p-aling">Answers to 4 special questions of Assignment 6 are
+                     given below.</p>
+               </div>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col">
+               <div class="accordion" id="accordionExample">
+
+                  <div class="accordion-item ">
+                     <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                           data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                           What are the difference between var, let, and const?
+                        </button>
+                     </h2>
+                     <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                           <strong>Var: </strong>The scope of a var variable is functional scope. It can be updated and
+                           re-declared into the scope.It can be declared without initialization.It can be accessed
+                           without initialization as its default value is “undefined”.
+                           <br>
+                           <strong>Ex: </strong><code> var greeter = "hey hi";
+                              var greeter = "say Hello instead";
+                           </code>
+                           <br>
+                           <hr>
+                           <strong>Let: </strong> The scope of a let variable is block scope.It can be updated but
+                           cannot be re-declared into the scope.It can be declared without initialization.not be
+                           accessed without initialization otherwise it will give ‘referenceError’.
+                           <br>
+                           <strong>Ex: </strong><code> let greeting = "say Hi";
+                              let greeting = "say Hello instead"; // error: Identifier 'greeting' has already been
+                              declared
+                              <br>
+                              let greeting = "say Hi";
+                              if (true) {
+                              let greeting = "say Hello instead";
+                              }
+
+                           </code>
+                           <hr>
+                           <strong>Const: </strong>The scope of a const variable is block scope.It cannot be updated or
+                           re-declared into the scope.It cannot be declared without initialization.It cannot be accessed
+                           without initialization otherwise it will give ‘referenceError’. It cannot be accessed without
+                           initialization, as it cannot be declared without initialization.
+                           <br>
+                           <strong>Ex: </strong><code> const greeting = "say Hi";
+                              greeting = "say Hello instead"; // error: Assignment to constant variable.
+
+                           </code>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="accordion-item">
+                     <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                           data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                           What are the difference between map foreach filter and find?
+                        </button>
+                     </h2>
+                     <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                           <strong>map : </strong>
+                           Loops over each element of the array and returns any value at the end of the loop and
+                           creates a new array.
+                           <br>
+                           <strong>forEach : </strong> loops through each element of the array and returns no value at
+                           the end of the loop and creates a new array.
+                           <br>
+                           <hr>
+                           <strong>filter : </strong> Filter Loops over each element of the array depending on one or
+                           more truths and returns an array of multiple elements matching the truth.
+                           <br>
+                           <strong>find : </strong> It loops over the elements of the array depending on one or more
+                           truths, but the find returns from where the truth matches and doesn't look at the next
+                           element. It returns the first matched element
+                           <br>
+
+                        </div>
+                     </div>
+                  </div>
+                  <div class="accordion-item">
+                     <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                           data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                           Why use template literals?
+                        </button>
+                     </h2>
+                     <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                           <strong>Template Literals:</strong> Template literals are written in html-like
+                           syntax,Template literals are enclosed by backtick (`) characters instead of double or single
+                           quotes.
+                           providing an easy way to expand variables and expressions into strings. The method is called
+                           string interpolation.
+                           <div class="d-flex ">
+                              <strong>Example: </strong>
+                              <code>let total = `Total: ${(price * (1 + VAT)).toFixed(2)}`;
+                                 <br>
+                                 let html = `<h5>${header}</h5>`;
+                              </code>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="accordion-item">
+                     <h2 class="accordion-header" id="headingForth">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                           data-bs-target="#collapseForth" aria-expanded="false" aria-controls="collapseForth">
+                           What are the difference between array function and regular function ?
+                        </button>
+                     </h2>
+                     <div id="collapseForth" class="accordion-collapse collapse" aria-labelledby="headingForth"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                           <strong>Syntax: </strong>We can write normal and arrow function in this way.
+                           <br>
+                           <code>// ES5
+                              var add = function(x, y) {
+                              return x + y
+                              };<br>
+                              // ES6
+                              let add = (x, y) => x + y
+                           </code>
+                           <hr>
+                           <strong>This:</strong><br>
+                           • Simple Invocation: this equals the global object or maybe undefined if you
+                           are using strict
+                           mode. <br>
+                           • Method Invocation: this equals the object that owns the method. <br>
+                           • Arrow functions don’t have their own this, and they don’t redefine the value of this within
+                           the function.<br>
+                           • this inside an arrow function always refers to this from the outer context.
+                           <br>
+                           <hr>
+                           <strong>Implicit Return:</strong><br>
+                           In regular function, you have to use return keyword to return any value. If you don’t return
+                           anything then the function will return undefined.<br>
+
+                           You don't need to use return keyword in array function for single line. But in case of
+                           multiline, return has to be done. <code>const addOne = (number) => number + 1;
+                              addOne(10);</code>
+                           <br>
+                           <hr>
+                           <strong>Arguments binding :</strong> <br>
+                           In regular function, Arguments keywords can be used to access the arguments of which passed
+                           to function.
+                           Arrow functions do not have an arguments binding.
+                           <hr>
+                           <strong>Function Hoisting: </strong> <br>
+                           In regular function, function gets hoisting at top.
+
+                           In arrow function, function get hoisted where you define. So, if you call the function before
+                           initialisation you will get referenceError.
+
+
+                           <div class="d-flex ">
+
+                           </div>
+                        </div>
+
+
+                     </div>
+                  </div>
+
+               </div>
+
+            </div>
+         </div>
+      </div>
+
+   </section>
+   <!-- ------------------ 
+      START FOOTER AMOUNT PART 
+      ----------------- -->
+   <footer class="fixed-bottom">
+      <div class=" mid-container">
+         <p>Copyright &copy; 2022 All Rights Reserved (Global News)</p>
+      </div>
+   </footer>
+   <!-- ------------------ 
+               END FOOTER AMOUNT PART
+                ----------------- -->
+
+
+   <!-- ....................... 
+   Frequently Asked Questions Section End
+   ....................... -->
+
+
+
+
+
+
+
+
+
+
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+   </script>
+   <script src="./assets/js/app.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,129 @@
+/* all fonts load  */
+
+@font-face{
+   src:url(../fonts/google-font/Poppins-Bold.ttf);
+   font-family: Poppins-Bold;
+}
+@font-face{
+   src:url(../fonts/google-font/Roboto-Medium.ttf);
+   font-family: Roboto-Medium;
+}
+@font-face{
+   src:url(../fonts/google-font/BebasNeue-Regular.ttf);
+   font-family: BebasNeue-Regular;
+}
+@font-face{
+   src:url(../fonts/google-font/Cookie-Regular.ttf);
+   font-family: Cookie-Regular;
+}
+
+body{
+   background-color: #F8F9FA !important;
+}
+*{
+   margin: 0px;
+   padding: 0px;
+}
+a{
+   text-decoration: none;
+}
+/* .container{
+   width: 90%;
+   margin: 0px auto;
+} */
+h1,
+h2,
+h3{
+   font-family: Poppins-Bold;
+   color: rgb(8, 17, 64);
+}
+h1{
+   color: #FF5E19;
+   font-size: 50px;
+}
+p{
+   font-family:  Arial, Helvetica, sans-serif;
+   color: rgba(58, 53, 53, 0.658);
+}
+
+
+
+.athor-image{
+   width: 40px;
+   height: 40px;
+   border-radius: 50%;
+}
+.header-link:hover{
+   transition: 0.5s;
+   font-weight: bold !important;
+   color: aquamarine !important;
+
+}
+/* ...................   */
+.model-img{
+   height: 250px;
+}
+.img-height{
+   height: 100% !important;
+
+}
+.container{
+   padding: 0px 0px !important;
+}
+/* ......news body ..........  */
+.news-body{
+   margin-bottom: 100px !important;
+}
+/* ...... blog section ..........   */
+.blog-body{
+   margin-bottom: 150px;
+}
+/* ------------------ START FOOTER PART ----------------- */
+footer{
+   width: 100%;
+   padding: 10px 0px;
+   background-color: rgba(232, 221, 221, 0.962);
+   /* margin-top: 100px; */
+}
+.mid-container{
+   width: 500px;
+   display: block;
+   margin: 0px auto;
+}
+
+
+.mid-container p{
+   color: rgba(30, 29, 29, 0.701);
+   font-size: 13px;
+   word-spacing: 2px;
+   letter-spacing: 2px;
+   text-align: center;
+}
+
+/* ------------------ END FOOTER PART ----------------- */ 
+/* sm media query  */
+@media only screen and (min-width:0px) and (max-width: 575px) {
+   .font-sz{
+      font-size: 12px !important;
+   }
+   #author-img img{
+      width: 60px !important;
+      height: 60px !important;
+   }
+   .author-name{
+      /* margin-top: 10px; */
+      margin-left: 2px;
+   }
+   .show-length {
+      width: 95%;
+
+   }
+   .show-length p{
+      font-size: 14px !important;
+      text-align: center;
+      padding-left: 10px !important;
+   }
+   #items-length{
+      margin: 0px auto;
+   }
+}

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="shortcut icon" href="./assets/images/daily-news.png" type="image/x-icon">
+   <title>Global News</title>
+   <link rel="stylesheet" href="./assets/css/style.css">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+
+
+   <header>
+      <!-- TOP HEADER SECTION START -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+         <div class="container">
+            <a class="navbar-brand" href="#"><span class="bg-info p-1 px-2 rounded-3 fw-bold">Global</span> News</a>
+
+            <div class="" id="navbarText">
+
+               <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex flex-row justify-content-center align-content-center">
+                  <li class="nav-item me-1 header-link">
+                     <a class="nav-link active" aria-current="page" href="./index.html">News</a>
+                  </li>
+                  <li class="nav-item header-link">
+                     <a class="nav-link me-1" href="./blog.html">Blogs</a>
+                  </li>
+                  <li class="nav-item">
+                     <img class="athor-image" src="./assets/images/sanu.png" alt="" srcset="">
+                  </li>
+               </ul>
+
+            </div>
+
+         </div>
+      </nav>
+      <hr>
+      <!-- SECOND HEADER SECTION START  -->
+      <div class="container">
+         <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+
+               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                  aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav">
+                     <li class="nav-item me-3">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                     </li>
+
+                  </ul>
+                  <ul class="navbar-nav" id="navbar-id">
+
+                     <!-- Menu list add Dynamic  -->
+
+                  </ul>
+               </div>
+            </div>
+         </nav>
+      </div>
+   </header>
+   <!-- End Header Section  -->
+   <!-- START NEW BODY SECTION  -->
+   <section class="mt-4 news-body">
+      <div class="container">
+         <div id="items-length" class="mb-4">
+            <!-- Total New name and length show  -->
+         </div>
+         <div class="row mb-4 mb-sm-3">
+            <!-- default section  -->
+            <!-- <div class="col-md-6 col-sm-12 d-flex d-sm-flex col-8 mx-auto">
+               <div
+                  class="col-md-2 col-lg-3 col-sm-6 col-5 d-flex d-sm-flex align-items-lg-start justify-content-lg-start align-items-sm-center justify-content-sm-around text-sm-center ">
+                  <h6 class="mt-2 ">Sort By View</h6>
+               </div>
+               <div class="col-md-10 col-sm-8 col-7 ms-5 ms-lg-1">
+                  <div id="select-option ">
+                     <select class="form-select w-50 border-0" aria-label="Default select example">
+                        <option selected>Default</option>
+                        <option value="1">Top View</option>
+                        <option value="2">Lowest View</option>
+
+                     </select>
+                  </div>
+               </div>
+            </div> -->
+            <!-- button section  -->
+            <!-- <div
+               class="col-md-6 col-sm-12 col-12 d-flex d-sm-flex justify-content-center justify-content-lg-end align-items-center justify-content-sm-center mt-sm-3 align-items-sm-center mt-3">
+               <button class="btn btn-primary me-3">Today's Pick</button>
+               <button class="btn btn-outline-primary">Trending</button>
+            </div> -->
+         </div>
+         <div class=" card mb-4 border-0" id="news-body">
+            <!-- All NEWS card body  -->
+
+         </div>
+      </div>
+      <!-- spinner add  -->
+      <section id="loader" class="d-none">
+         <div class="d-flex justify-content-center align-items-center" style="height: 250px">
+            <div class="spinner-border text-primary " role="status" style="width:100px; height:100px">
+               <span class="visually-hidden">Loading...</span>
+            </div>
+         </div>
+      </section>
+   </section>
+
+   <!-- SINGLE NEW DETAILS WITH MODAL -->
+   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" id="modal-body-id">
+
+         <!-- modal body  -->
+
+      </div>
+
+   </div>
+
+   <!-- ------------------ 
+      START FOOTER AMOUNT PART 
+      ----------------- -->
+   <footer class="fixed-bottom">
+      <div class=" mid-container">
+         <p>Copyright &copy; 2022 All Rights Reserved (Global News)</p>
+      </div>
+   </footer>
+   <!-- ------------------ 
+            END FOOTER AMOUNT PART
+             ----------------- -->
+
+
+
+
+
+
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+   </script>
+   <script src="./assets/js/app.js"></script>
+   <script src="https://kit.fontawesome.com/93a1e21860.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
