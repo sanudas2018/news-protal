@@ -16,6 +16,7 @@ const showAllNewHeader = async () => {
    const menuUl = document.getElementById('navbar-id');
    const newAllData = allData.data.news_category;
    // console.log(allData.data.news_category);
+   console.log(alldata);
    const uniqueArray = [];
    for (const news of newAllData) {
       // console.log(news);
